@@ -2,6 +2,7 @@
 
 ## Includes Guides To:
 
+- **GRUB Bootloader** (inclu)
 - **LUKS encryption** (included)
 - **BTRFS filesystem with subvolumes** (included)
 - **UEFI mode** (included)
@@ -310,7 +311,7 @@ Please be aware that these names should be substituted with the actual device pa
     mkinitcpio -P
     ```
 
-31. Setup GRUB:
+31. Setup systemd-boot:
     
     ```shell
     pacman -S grub efibootmgr

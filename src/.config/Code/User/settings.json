@@ -147,8 +147,7 @@
 	"C_Cpp.intelliSenseEngine": "disabled",
 	"[c]": {
 		"editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
-	},
-	"workbench.colorTheme": "Min Dark",
+    },
 	"[cpp]": {
 		"editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
 	},
