@@ -23,7 +23,7 @@ filetype plugin on
 filetype indent on
 
 " Turn syntax highlighting on.
-syntax on
+syntax off
 
 " Set shift width to 4 spaces.
 set shiftwidth=4
