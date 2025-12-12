@@ -2,7 +2,6 @@ return {
   {
     "rebelot/kanagawa.nvim",
     opts = {
-      transparent = false,
       colors = {
         theme = {
           all = {
@@ -10,7 +9,16 @@ return {
               bg_gutter = "none",
             },
           },
+          dragon = {
+            ui = {
+              bg = "#000000",
+            },
+          },
         },
+      },
+      background = {
+        dark = "dragon",
+        light = "lotus",
       },
       overrides = function(colors)
         local theme = colors.theme
@@ -20,7 +28,7 @@ return {
         end
 
         return {
-          Pmenu = { fg = theme.ui.shade0, bg = theme.ui.bg_p1 }, -- add `blend = vim.o.pumblend` to enable transparency
+          Pmenu = { fg = theme.ui.shade0, bg = theme.ui.bg_p1 },
           PmenuSel = { fg = "NONE", bg = theme.ui.bg_p2 },
           PmenuSbar = { bg = theme.ui.bg_m1 },
           PmenuThumb = { bg = theme.ui.bg_p2 },
@@ -44,7 +52,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa-dragon",
+      colorscheme = "kanagawa",
     },
   },
 }
