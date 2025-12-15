@@ -9,7 +9,7 @@ alias t="trash-put"
 alias tc="rm -rf ~/.local/share/Trash/*"
 alias mdl="yt-dlp -f ba -x --audio-format flac --audio-quality 0"
 alias vdl="yt-dlp -f bestvideo+bestaudio"
-alias v="v"
+alias v="vim"
 alias nv="nvim"
 
 # -----------------------------------------------------
