@@ -5,12 +5,14 @@ alias ff='fastfetch'
 alias ls='eza --icons=always'
 alias l='eza -lah --icons=always'
 alias lt='eza --tree --icons=always'
-alias t="trash-put"
-alias tc="rm -rf ~/.local/share/Trash/*"
-alias mdl="yt-dlp -f ba -x --audio-format flac --audio-quality 0"
-alias vdl="yt-dlp -f bestvideo+bestaudio"
-alias v="vim"
-alias nv="nvim"
+alias t='trash-put'
+alias tc='rm -rf ~/.local/share/Trash/*'
+alias y='yt-dlp -o "%(title)s.%(ext)s" --cookies-from-browser firefox'
+alias adl='y -f "bestaudio[ext=m4a]/bestaudio/best" -x --audio-format mp3'
+alias vdl='y -f "bestaudio[ext=m4a]+bestvideo*[ext=mp4]/best[ext=mp4]/best"'
+# alias mdl='y -f "bestaudio[ext=m4a]/bestaudio/best" -x --audio-format flac --audio-quality 0'
+alias v='vim'
+alias nv='nvim'
 
 # -----------------------------------------------------
 # Git 
