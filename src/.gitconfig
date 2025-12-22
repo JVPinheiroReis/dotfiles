@@ -65,3 +65,6 @@
 	t = tag
 	m = merge
 	f = fetch
+[push]
+	autoSetupRemote = true
+	default = current
