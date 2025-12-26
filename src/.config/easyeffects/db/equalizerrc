@@ -1,4 +1,5 @@
 [soe][Equalizer#0]
+balance=82.5
 numBands=15
 
 [soe][Equalizer#0#left]
