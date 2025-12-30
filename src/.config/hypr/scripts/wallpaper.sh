@@ -7,5 +7,4 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-hyprctl hyprpaper preload "$1"
 hyprctl hyprpaper wallpaper ",$1"

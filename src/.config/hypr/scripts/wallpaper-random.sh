@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 
 SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
+echo "Script directory: $SCRIPT_DIR"
 
 WALLPAPER_DIR="$HOME/wallpapers/"
-CURRENT_WALL=$(hyprctl hyprpaper listloaded)
+echo "Wallpaper directory: $WALLPAPER_DIR"
 
-WALLPAPER=$(find "$WALLPAPER_DIR" -type f -not -path '*/\.git/*' ! -name "$(basename "$CURRENT_WALL")" | shuf -n 1)
+NEW_WALLPAPER=$(find "$WALLPAPER_DIR" -type f -not -path '*/\.git/*' | shuf -n 1)
+echo "New wallpaper: $NEW_WALLPAPER"
 
-"$SCRIPT_DIR"/wallpaper.sh "$WALLPAPER"
+"$SCRIPT_DIR/wallpaper.sh" "$NEW_WALLPAPER"
