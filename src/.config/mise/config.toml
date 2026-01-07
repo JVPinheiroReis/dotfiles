@@ -1,3 +1,9 @@
 [tools]
+gradle = "9.2.1"
+java = "temurin-25.0.1+8.0.LTS"
+maven = "3.9.12"
+pnpm = "10.27.0"
 rust = "1.92.0"
+spring-boot = "4.0.1"
 usage = "latest"
+uv = "0.9.22"

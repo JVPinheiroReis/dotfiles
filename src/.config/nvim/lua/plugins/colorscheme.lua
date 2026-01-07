@@ -5,10 +5,11 @@ return {
     priority = 1000,
     opts = {},
   },
+  { "EdenEast/nightfox.nvim" },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "default",
+      colorscheme = "nightfox",
     },
   },
 }
