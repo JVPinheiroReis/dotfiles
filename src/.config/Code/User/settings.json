@@ -1,4 +1,5 @@
 {
+	"workbench.colorTheme": "Everforest Dark",
 	"chat.titleBar.signIn.enabled": false,
 	"chat.titleBar.openInAgentsWindow.enabled": false,
 	"debug.onTaskErrors": "debugAnyway",
@@ -9,7 +10,7 @@
 	"editor.colorDecorators": true,
 	"editor.detectIndentation": false,
 	"editor.formatOnSave": true,
-	"editor.fontFamily": "FiraCode Nerd Font Mono",
+	"editor.fontFamily": "JetBrainsMono Nerd Font",
 	"editor.fontLigatures": false,
 	"editor.fontSize": 14,
 	"editor.fontWeight": "450",
@@ -41,24 +42,25 @@
 	},
 	"files.associations": {
 		"**/templates/*.html": "django-html",
-		"*.yaml": "yaml"
+		"*.yaml": "yaml",
+		"*.html": "html"
 	},
 	"git.confirmSync": false,
 	"git.defaultBranchName": "master",
 	"git.terminalAuthentication": false,
 	"github.gitAuthentication": true,
-	"gitlens.codeLens.recentChange.enabled": false,
 	"js/ts.updateImportsOnFileMove.enabled": "always",
 	"js/ts.preferences.preferTypeOnlyAutoImports": true,
 	"json.schemaDownload.trustedDomains": {
-		"https://schemastore.azurewebsites.net/": true,
-		"https://raw.githubusercontent.com/microsoft/vscode/": true,
-		"https://raw.githubusercontent.com/devcontainers/spec/": true,
-		"https://www.schemastore.org/": true,
-		"https://json.schemastore.org/": true,
-		"https://json-schema.org/": true,
+		"https://biomejs.dev": true,
 		"https://developer.microsoft.com/json-schemas/": true,
-		"https://biomejs.dev": true
+		"https://json-schema.org/": true,
+		"https://json.schemastore.org/": true,
+		"https://raw.githubusercontent.com/devcontainers/spec/": true,
+		"https://raw.githubusercontent.com/microsoft/vscode/": true,
+		"https://schemastore.azurewebsites.net/": true,
+		"https://ui.shadcn.com": true,
+		"https://www.schemastore.org/": true
 	},
 	"security.workspace.trust.untrustedFiles": "open",
 	"latex-workshop.formatting.latex": "latexindent",
@@ -69,43 +71,29 @@
 		"%TMPFILE%",
 		"-y=defaultIndent: '%INDENT%'"
 	],
-	"liveServer.settings.donotShowInfoMsg": true,
-	"liveServer.settings.CustomBrowser": "firefox",
+	"Lua.workspace.library": ["/usr/share/hypr/stubs"],
 	"makefile.configureOnOpen": true,
 	"markdown-preview-enhanced.previewTheme": "atom-light.css",
 	"markdown-preview-enhanced.codeBlockTheme": "github-dark.css",
 	"notebook.defaultFormatter": "biomejs.biome",
 	"python.analysis.autoImportCompletions": true,
 	"python.analysis.importFormat": "absolute",
-	"python.createEnvironment.trigger": "off",
-	"python.defaultInterpreterPath": "/bin/python",
+	"python.venvFolders": [".venv"],
 	"prettier.useTabs": false,
 	"prettier.requireConfig": false,
 	"prettier.tabWidth": 4,
 	"redhat.telemetry.enabled": true,
 	"ruff.organizeImports": true,
-	"symbols.files.associations": {
-		"*.module.ts": "nest",
-		"*.guard.ts": "typescript",
-		"*.spec.ts": "ts-test",
-		"*.e2e-spec.ts": "ts-test",
-		"*.mock.ts": "ts-test",
-		"vitest.config.e2e.ts": "vite",
-		".env.development.local": "gear",
-		".env.test.local": "gear",
-		".env.local": "gear",
-		".env.sst": "gear",
-		".env.example": "gear",
-		"*.ndjson": "brackets-orange"
-	},
-	"terminal.integrated.defaultProfile.linux": "zsh",
+	"ruff.fixAll": true,
+	"shfmt.executableArgs": ["--indent", "4"],
+	"terminal.integrated.defaultProfile.linux": "bash",
 	"terminal.integrated.showExitAlert": false,
 	"window.autoDetectColorScheme": true,
 	"window.confirmSaveUntitledWorkspace": false,
 	"window.menuBarVisibility": "compact",
 	"window.titleBarStyle": "custom",
 	"workbench.editor.labelFormat": "short",
-	"workbench.externalBrowser": "firefox",
+	"workbench.externalBrowser": "chromium",
 	"workbench.settings.applyToAllProfiles": ["editor.fontFamily"],
 	"workbench.startupEditor": "newUntitledFile",
 	"workbench.tree.renderIndentGuides": "always",
@@ -118,11 +106,6 @@
 	"yaml.format.singleQuote": false,
 	"yaml.format.printWidth": 80,
 	"yaml.format.proseWrap": "preserve",
-	"yaml.schemas": {
-		"file:///home/Admin/.vscode/extensions/continue.continue-1.2.11-linux-x64/config-yaml-schema.json": [
-			".continue/**/*.yaml"
-		]
-	},
 	"[astro]": {
 		"editor.defaultFormatter": "astro-build.astro-vscode"
 	},
@@ -171,7 +154,10 @@
 		"editor.suggest.insertMode": "replace"
 	},
 	"[python]": {
-		"editor.defaultFormatter": "charliermarsh.ruff"
+		"editor.defaultFormatter": "charliermarsh.ruff",
+		"editor.codeActionsOnSave": {
+			"source.fixAll.ruff": "explicit"
+		}
 	},
 	"[rust]": {
 		"editor.defaultFormatter": "rust-lang.rust-analyzer"
@@ -190,5 +176,8 @@
 		"editor.insertSpaces": true,
 		"editor.defaultFormatter": "redhat.vscode-yaml"
 	},
-	"Lua.workspace.library": ["/usr/share/hypr/stubs"]
+	"[shellscript]": {
+		"files.eol": "\n",
+		"editor.defaultColorDecorators": "never"
+	}
 }
